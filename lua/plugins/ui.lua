@@ -17,14 +17,14 @@ return {
 		version = "^1.0.0", -- optional: only update when a new 1.x version is released
 
 		config = function()
-			require('barbar').setup()
+			require("barbar").setup()
 			-- Keymappings for bar bar to switch and close buffers
 			vim.keymap.set("n", "<leader>j", "<cmd>BufferPrevious<CR>")
 			vim.keymap.set("n", "<leader>k", "<cmd>BufferNext<CR>")
 			vim.keymap.set("n", "<leader>x", "<cmd>BufferClose<CR>")
 			vim.keymap.set("n", "<leader>X", "<cmd>BufferClose!<CR>")
 		end,
-	}, 
+	},
 	{
 		"nvim-tree/nvim-tree.lua",
 		version = "*",
@@ -35,10 +35,9 @@ return {
 		config = function()
 			require("nvim-tree").setup({})
 
-		-- Key mapping for opening and closing file tree
-		vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>")
-		vim.keymap.set("n", "<leader>tt", "<cmd>NvimTreeToggle<CR>", { desc = "[T]oggle Nvim [T]ree" })
-			
+			-- Key mapping for opening and closing file tree
+			vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>")
+			vim.keymap.set("n", "<leader>tt", "<cmd>NvimTreeToggle<CR>", { desc = "[T]oggle Nvim [T]ree" })
 		end,
 	},
 	{
@@ -50,4 +49,5 @@ return {
 			vim.cmd.hi("Comment gui=none")
 		end,
 	},
+	{ "echasnovski/mini.statusline" },
 }
