@@ -1,5 +1,3 @@
-opts = opts or {}
-
 return {
 	{
 		"romgrk/barbar.nvim",
@@ -26,7 +24,6 @@ return {
 			vim.keymap.set("n", "<leader>x", "<cmd>BufferClose<CR>")
 			vim.keymap.set("n", "<leader>X", "<cmd>BufferClose!<CR>")
 		end,
-		cond = opts.disable_barbar,
 	},
 	{
 		"nvim-tree/nvim-tree.lua",
@@ -42,7 +39,6 @@ return {
 			vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>")
 			vim.keymap.set("n", "<leader>tt", "<cmd>NvimTreeToggle<CR>", { desc = "[T]oggle Nvim [T]ree" })
 		end,
-		cond = opts.disable_nvim_tree,
 	},
 	{
 		"Mofiqul/vscode.nvim",
@@ -52,13 +48,11 @@ return {
 
 			vim.cmd.hi("Comment gui=none")
 		end,
-		cond = opts.disable_vscode_colorscheme,
 	},
 	{
 		"echasnovski/mini.statusline",
 		config = function()
 			require("mini.statusline").setup({})
 		end,
-		cond = opts.disable_mini_statusline,
 	},
 }
