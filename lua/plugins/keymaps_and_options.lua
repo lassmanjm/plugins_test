@@ -9,10 +9,6 @@ function M.setup()
     vim.g.mapleader = " "
     vim.g.maplocalleader = " "
 
-    -- Key mapping for opening and closing file tree
-    vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>")
-    vim.keymap.set("n", "<leader>tt", "<cmd>NvimTreeToggle<CR>", { desc = "[T]oggle Nvim [T]ree" })
-
     -- Set to true if you have a Nerd Font installed and selected in the terminal
     vim.g.have_nerd_font = true
 
