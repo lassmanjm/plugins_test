@@ -9,12 +9,6 @@ function M.setup()
     vim.g.mapleader = " "
     vim.g.maplocalleader = " "
 
-    -- Keymappings for bar bar to switch and close buffers
-    vim.keymap.set("n", "<leader>j", "<cmd>BufferPrevious<CR>")
-    vim.keymap.set("n", "<leader>k", "<cmd>BufferNext<CR>")
-    vim.keymap.set("n", "<leader>x", "<cmd>BufferClose<CR>")
-    vim.keymap.set("n", "<leader>X", "<cmd>BufferClose!<CR>")
-
     -- Key mapping for opening and closing file tree
     vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>")
     vim.keymap.set("n", "<leader>tt", "<cmd>NvimTreeToggle<CR>", { desc = "[T]oggle Nvim [T]ree" })
