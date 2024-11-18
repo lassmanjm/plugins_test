@@ -49,5 +49,10 @@ return {
 			vim.cmd.hi("Comment gui=none")
 		end,
 	},
-	{ "echasnovski/mini.statusline" },
+	{
+		"echasnovski/mini.statusline",
+		config = function()
+			require("mini.statusline").setup({})
+		end,
+	},
 }
