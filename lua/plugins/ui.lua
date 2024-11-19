@@ -40,6 +40,8 @@ return {
 				}
 			})
 
+			local api = require("nvim-tree.api")
+
 			-- Key mapping for opening and closing file tree
 			vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>")
 			vim.keymap.set("n", "<leader>tt", "<cmd>NvimTreeToggle<CR>", { desc = "[T]oggle Nvim [T]ree" })
