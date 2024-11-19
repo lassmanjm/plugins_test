@@ -47,11 +47,7 @@ return {
 			vim.keymap.set("n", "<leader>tt", "<cmd>NvimTreeToggle<CR>", { desc = "[T]oggle Nvim [T]ree" })
 
 			-- Keymapping to cd into directory uder cursor (ctrl + Enter)
-			vim.keymap.set("n", "<A-'>", "<C-]>")
-			vim.keymap.set("n", "<A-\">", "<C-]>")
-			vim.keymap.set("n", "<A-CR>", api.tree.change_root_to_node)
-			vim.keymap.set("n", "<A-[>", api.tree.change_root_to_node)
-			vim.keymap.set("n", "<A-s>", api.tree.change_root_to_node)
+			vim.keymap.set("n", "<leader>CR", api.tree.change_root_to_node)
 
 		end,
 	},
