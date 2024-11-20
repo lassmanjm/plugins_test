@@ -36,7 +36,12 @@ M.setup = function(opts)
 				"nvim-tree/nvim-web-devicons",
 			},
 			config = function()
-				require("nvim-tree").setup({})
+				require("nvim-tree").setup({
+					live_filter = {
+						prefix = "[FILTER]: ",
+						always_show_folders = false, -- Turn into false from true by default
+					}
+				})
 
 				-- Key mapping for opening and closing file tree
 				vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>")
