@@ -1,0 +1,2 @@
+-- local options = vim.g.bufferline
+-- require('plugins_test').setup(options)

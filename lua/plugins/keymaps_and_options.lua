@@ -1,6 +1,5 @@
-local M ={}
 
-function M.setup()
+    print("key maps!!")
     vim.cmd("source ~/.vimrc")
 
     -- Set <space> as the leader key
@@ -123,5 +122,4 @@ function M.setup()
         end,
     })
 
-end
-return M
+    return {}
