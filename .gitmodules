@@ -1,0 +1,3 @@
+[submodule "power_prompt"]
+	path = power_prompt
+	url = https://github.com/lassmanjm/power_prompt.git
